@@ -75,7 +75,7 @@ console.log(pets);
 //console.log(sessionStorage.getItem("Userprofile"));
   const getData = async () => {
     const response = await fetch(
-      `http://localhost:5000/adopter/profile/${sessionStorage.getItem(
+      `https://petsmart.herokuapp.com/adopter/profile/${sessionStorage.getItem(
         "UserId"
       )}`
     );
@@ -86,7 +86,7 @@ console.log(pets);
 
   const getPet = async () => {
     const responses = await fetch(
-      `http://localhost:5000/adopter/favourite/${sessionStorage.getItem(
+      `https://petsmart.herokuapp.com/adopter/favourite/${sessionStorage.getItem(
         "UserId") }`
     );
     const dt = await responses.json();
@@ -98,7 +98,7 @@ console.log(pets);
 
         item.favourite.map(async (subitem)=>{
           const responses = await fetch(
-            `http://localhost:5000/adopter/favourite/details/${subitem}`
+            `https://petsmart.herokuapp.com/adopter/favourite/details/${subitem}`
           );
           const details = await responses.json();
          
@@ -121,7 +121,7 @@ console.log(pet)
     e.preventDefault();
 
     const {type, breed, age, gender, name, description, location, vaccinated, reason}=pets;
-    const response= await fetch('http://localhost:5000/pet/upload',{
+    const response= await fetch('https://petsmart.herokuapp.com/pet/upload',{
       method:"POST",
       headers:{                                //tell server that you are passing json data
           'Content-Type':'application/json',
@@ -173,7 +173,7 @@ const [user, setUser] = useState([]);
         })
         .then(async (willUpdate) => {
           if (willUpdate) {
-              const response = await fetch(`http://localhost:5000/profile/adopter/update/${sessionStorage.getItem("UserId") }`,{
+              const response = await fetch(`https://petsmart.herokuapp.com/profile/adopter/update/${sessionStorage.getItem("UserId") }`,{
                   method:"PUT",
                   headers: { 'Content-Type':'application/json',
                   'Accept':'application/json' },

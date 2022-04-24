@@ -54,7 +54,7 @@ const Img = styled.img`
   const [ownerinformation, setownerinformation] = useState([]);
 
 const ownerinfo = async ()=>{
-    const response = await fetch(`http://localhost:5000/owner/${owner}`)
+    const response = await fetch(`https://petsmart.herokuapp.com/owner/${owner}`)
     const data = await response.json();
     setownerinformation(data);
    
@@ -96,7 +96,7 @@ useEffect(() => {
 const getSave =async ()=>
 {
   const responses = await fetch(
-    `http://localhost:5000/adopter/favourite/${sessionStorage.getItem("UserId") }`
+    `https://petsmart.herokuapp.com/adopter/favourite/${sessionStorage.getItem("UserId") }`
   );
   const dt = await responses.json();
   
@@ -127,7 +127,7 @@ const [ fav, setFav] = useState();
 const handleFav = async ()=>{
   setFav(!fav);
   if(fav == false){
-    const response = await fetch(`http://localhost:5000/adopter/favourite`,{
+    const response = await fetch(`https://petsmart.herokuapp.com/adopter/favourite`,{
       method:"PUT",
       headers:{                                //tell server that you are passing json data
           'Content-Type':'application/json',
@@ -146,7 +146,7 @@ const handleFav = async ()=>{
       })
     }
   }else{
-    const response = await fetch(`http://localhost:5000/adopter/favourite/remove`,{
+    const response = await fetch(`https://petsmart.herokuapp.com/adopter/favourite/remove`,{
       method:"delete",
       headers:{                                //tell server that you are passing json data
         'Content-Type':'application/json',

@@ -87,7 +87,7 @@ console.log(pets);
 //console.log(sessionStorage.getItem("Userprofile"));
   const getData = async () => {
     const response = await fetch(
-      `http://localhost:5000/user/profile/${sessionStorage.getItem("Userprofile")}`
+      `https://petsmart.herokuapp.com/user/profile/${sessionStorage.getItem("Userprofile")}`
     );
     const data = await response.json();
     setitems(data);
@@ -96,7 +96,7 @@ console.log(pets);
 
   const getPet = async () => {
     const responses = await fetch(
-      `http://localhost:5000/adopter/pet/${sessionStorage.getItem(
+      `https://petsmart.herokuapp.com/adopter/pet/${sessionStorage.getItem(
         "Userprofile") }`
     );
     const dt = await responses.json();
@@ -110,7 +110,7 @@ console.log(pets);
     e.preventDefault();
 
     const {type, breed, age, gender, name, description, location, vaccinated, reason,one,two,three,four,five,six,url}=pets;
-    const response= await fetch('http://localhost:5000/pet/upload',{
+    const response= await fetch('https://petsmart.herokuapp.com/pet/upload',{
       method:"POST",
       headers:{                                //tell server that you are passing json data
           'Content-Type':'application/json',
@@ -156,7 +156,7 @@ const [user, setUser] = useState([]);
         })
         .then(async (willUpdate) => {
           if (willUpdate) {
-              const response = await fetch(`http://localhost:5000/profile/user/update/${sessionStorage.getItem("Userprofile") }`,{
+              const response = await fetch(`https://petsmart.herokuapp.com/profile/user/update/${sessionStorage.getItem("Userprofile") }`,{
                   method:"PUT",
                   headers: { 'Content-Type':'application/json',
                   'Accept':'application/json' },

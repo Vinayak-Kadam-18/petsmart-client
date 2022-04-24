@@ -45,7 +45,7 @@ export default function
           })
           .then(async (willDelete) => {
             if (willDelete) {
-                const response = await fetch(`http://localhost:5000/profile/mypets/delete/${id}`,{
+                const response = await fetch(`https://petsmart.herokuapp.com/profile/mypets/delete/${id}`,{
                     method:"delete"
             })
             const data = await response.json();
@@ -65,7 +65,7 @@ export default function
 
     const [Items, setItems] = useState([]);
     const getdata = async () => {
-        const response = await fetch(`http://localhost:5000/pets/${id}`);
+        const response = await fetch(`https://petsmart.herokuapp.com/pets/${id}`);
         const data = await response.json();
     
         setItems(data);
@@ -114,7 +114,7 @@ const update=()=>
   })
   .then(async (willUpdate) => {
     if (willUpdate) {
-        const response = await fetch(`http://localhost:5000/profile/mypets/update/${id}`,{
+        const response = await fetch(`https://petsmart.herokuapp.com/profile/mypets/update/${id}`,{
             method:"PUT",
             headers: { 'Content-Type':'application/json',
             'Accept':'application/json' },

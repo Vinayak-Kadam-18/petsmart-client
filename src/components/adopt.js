@@ -18,7 +18,7 @@ export default function () {
     const [items,setItems] = useState([]);
 
     const fetchItems = async () =>{
-        const data = await fetch('http://localhost:5000/api');
+        const data = await fetch('https://petsmart.herokuapp.com/api');
         const item = await data.json();
         console.log(items);
         setItems(item);

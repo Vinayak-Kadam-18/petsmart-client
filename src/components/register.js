@@ -120,7 +120,7 @@ const states= register.state;
 
     if (register.password === register.confirmpassword && flag === true) {
       if (type === "adopter") {
-        const response = await fetch("http://localhost:5000/register/adopter", {
+        const response = await fetch("https://petsmart.herokuapp.com/register/adopter", {
           method: "POST",
           headers: {
             //tell server that you are passing json data
@@ -152,7 +152,7 @@ const states= register.state;
           });
         }
       } else if (type === "user") {
-        const response = await fetch("http://localhost:5000/register/user", {
+        const response = await fetch("https://petsmart.herokuapp.com/register/user", {
           method: "POST",
           headers: {
             //tell server that you are passing json data
