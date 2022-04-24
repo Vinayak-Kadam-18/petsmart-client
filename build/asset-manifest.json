@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e6e17506.css",
+    "main.js": "/static/js/main.01f59d31.js",
+    "static/media/tim-umphreys-M-svG1XYiHs-unsplash.jpg": "/static/media/tim-umphreys-M-svG1XYiHs-unsplash.0c2ff4218fe260144c31.jpg",
+    "static/media/enis-yavuz-KKtuRtGkDys-unsplash.jpg": "/static/media/enis-yavuz-KKtuRtGkDys-unsplash.6209af16a62e0410d144.jpg",
+    "static/media/vecteezy_people-and-pets-cat-and-dog-with-man-and-woman-pet-owner_-removebg-preview.png": "/static/media/vecteezy_people-and-pets-cat-and-dog-with-man-and-woman-pet-owner_-removebg-preview.8129a574c050795330c6.png",
+    "static/media/Amsterdam.ttf": "/static/media/Amsterdam.6e87553f8f3ca6618c04.ttf",
+    "static/media/flouffy-g2FtlFrc164-unsplash-removebg-preview.png": "/static/media/flouffy-g2FtlFrc164-unsplash-removebg-preview.e04732c1f0b7dcb39c9e.png",
+    "static/media/kids-dogs-happy-children-playing-hugging-their-funny-pets-vector-cartoon-puppy-dog-domestic-animals-girl-boy-person-child-156391699-removebg-preview (1).png": "/static/media/kids-dogs-happy-children-playing-hugging-their-funny-pets-vector-cartoon-puppy-dog-domestic-animals-girl-boy-person-child-156391699-removebg-preview (1).5ca7b401c9a5094c9886.png",
+    "static/media/happy-boy-walking-his-purebred-dogs-leash-young-smiling-guy-standing-domestic-animals-cute-funny-pet-owner-happy-boy-136070652-removebg-preview.png": "/static/media/happy-boy-walking-his-purebred-dogs-leash-young-smiling-guy-standing-domestic-animals-cute-funny-pet-owner-happy-boy-136070652-removebg-preview.24393ec014d8554815c7.png",
+    "static/media/young-woman-spending-time-with-dog-female-owner-cute-domestic-animal-friendship-with-pet-concept-horizontal-full-length-vector-illustration_48369-40407-removebg-preview.png": "/static/media/young-woman-spending-time-with-dog-female-owner-cute-domestic-animal-friendship-with-pet-concept-horizontal-full-length-vector-illustration_48369-40407-removebg-preview.aa7fcbe5b84728098d09.png",
+    "static/media/RayligAlternatemedium-X3RJj.otf": "/static/media/RayligAlternatemedium-X3RJj.ab302702298aabf0609f.otf",
+    "static/media/CooperBlackRegular.ttf": "/static/media/CooperBlackRegular.dbe0cbaa54b6ad6fa396.ttf",
+    "static/media/faceless-happy-woman-walking-with-dog-park_74855-7312-removebg-preview.png": "/static/media/faceless-happy-woman-walking-with-dog-park_74855-7312-removebg-preview.556317916572aeea5f18.png",
+    "static/media/Sad_dog.png": "/static/media/Sad_dog.8a882167def74a09f888.png",
+    "static/media/ADAM.CGPRO.otf": "/static/media/ADAM.CGPRO.94966bfa189a09f0a303.otf",
+    "static/media/blank-profile-picture-g1738e6f86_1280.png": "/static/media/blank-profile-picture-g1738e6f86_1280.c3f945216dc12c9498dc.png",
+    "static/media/DownlinkBold.otf": "/static/media/DownlinkBold.58f594deb6c6e9610709.otf",
+    "static/media/CODEBold.otf": "/static/media/CODEBold.2ade8685d0e7475fd8a9.otf",
+    "static/media/wave1.png": "/static/media/wave1.4de881bf35ead0adb3ae.png",
+    "index.html": "/index.html",
+    "main.e6e17506.css.map": "/static/css/main.e6e17506.css.map",
+    "main.01f59d31.js.map": "/static/js/main.01f59d31.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6e17506.css",
+    "static/js/main.01f59d31.js"
+  ]
+}
